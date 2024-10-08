@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "TTLakes";
+    src: url("fonts/TTLakes-Regular.woff") format("woff2");
+  }
+  
+  @font-face {
+    font-family: "TTLakesBold";
+    src: url("fonts/TTLakes-Bold.woff") format("woff2");
+  }
+  * {
+    font-family: "TTLakes", sans-serif;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    font-family: "TTLakesBold", sans-serif;
+  }
+  
+  body {
+    font-size: 14px;
+    color: #1b1c21;
+    background-color: #f8f8f8;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+*:focus{
+  outline: 2px solid transparent;
+}

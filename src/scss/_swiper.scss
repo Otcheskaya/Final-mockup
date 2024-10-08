@@ -1,0 +1,17 @@
+@media (min-width: 1120px) {
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination,
+.swiper-scrollbar {
+  display: none;
+}}
+
+@media (max-width: 768px) {
+    .swiper-wrapper {
+        max-width: 320px;
+      }
+      .swiper-pagination {
+        display: block;
+      }
+
+}

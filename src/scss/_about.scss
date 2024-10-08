@@ -1,0 +1,33 @@
+.about {
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    font-size: 14px;
+  }
+  
+  .about-history,
+  .about-optional {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    .about-history {
+        display: block;
+        line-height: 20px;
+      }
+    
+      .about {
+        line-height: 20px;
+      }
+    }
+    @media (min-width: 1120px) {
+        .about-history {
+            display: none;
+          }
+        
+          .about-optional {
+            display: block;
+            line-height: 20px;
+            font-family: "TTLakes", sans-serif;
+            letter-spacing: 0.2px;
+          }
+    }

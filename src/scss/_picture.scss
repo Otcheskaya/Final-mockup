@@ -1,0 +1,18 @@
+.picture {
+    width: 320px;
+    height: 176px;
+  }
+
+  @media (min-width: 768px) {
+    .picture {
+        width: 360px;
+        height: 208px;
+      }
+  }
+
+  @media (min-width: 1120px) {
+    .picture {
+        width: 531px;
+        height: 307px;
+      }
+  }

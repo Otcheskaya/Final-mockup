@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <header>
+      <nav>
+        <ul class="menu">
+          <li> <button class=" btn menu__burger"> 
+            <img src="/images/burger.svg" alt="Иконка" />
+          </button> </li>
+          <li> <button class=" btn menu__group">
+            <img src="/images/Group.svg" alt="Логотип" /></button></li>
+          <li> <button class=" btn menu__call">
+            <img src="/images/call.svg" alt="Иконка" /></button> </li>
+          <li> <button class=" btn menu__chat"> 
+            <img src="/images/chat.svg" alt="Иконка" /></button>
+          </li>
+          <li> <button class=" btn menu__profile">
+            <img src="/images/profile.svg" alt="Иконка" /> </button></li>
+          <li class="menu__divider">  
+            <img src="/images/divider.svg" alt="Разделитель" />
+          </li>
+          <li>  <button class="btn menu__repair">
+            <div class="menu__repair-text">Оставить заявку</div>
+            <img src="/images/repair.svg" alt="Иконка" />
+          </button></li>
+          <li> <button class="btn menu__checkstatus">
+            <div class="menu__checkstatus-text">Статус ремонта</div>
+            <img src="/images/checkstatus.svg" alt="Иконка"/>
+          </button> </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="title">Услуги и сервисы</h1>
+      <div class="buttons">
+        <button class="button button__0">Ремонтируемые бренды</button>
+        <button class="button button__1">Ремонтируемые устройства</button>
+        <button class="button button__2">Дополнительные услуги</button>
+        <button class="button button__3">Цены на услуги</button>
+        <button class="button button__4">Адреса сервисных центров</button>
+        <button class="button button__5">Специальные цены</button>
+        <button class="button button__6">Отзывы</button>
+      </div>
+      <div class="content">
+        <div class="content__text">
+          <p class="about">
+          Мы являемся авторизованным сервисным центром по ремонту техники
+            DELL. Только у нас вы можете отремонтировать свой ноутбук DEll c
+            официальной гарантией производителя.
+          </p>
+          <p class="about-history">
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного
+            партнера
+          </p>
+          <p class="about-optional">Мы успешно работаем с 1992 года и заслужили репутацию надежного
+            партнера,что подтверждает большое количество постоянных клиентов. Мы
+            гордимся тем, что к нам обращаются по рекомендациям и, в свою
+            очередь, советуют нас родным и близким.
+          </p> 
+          <button class="read-more"> <img src="/images/expand.svg"><div>Читать далее <div></button>
+        </div>
+        <img
+          class="picture"
+          src="/images/Picture Copy.svg"
+          alt="Табличка с логотипом компании"
+        />
+      </div>
+    </main>
+  
+
+    <nav class="navbar">
+      <div class="navbar__header">
+        <div>
+          <button class="btn">
+            <img src="./images/burger.svg" alt="Иконка" class="imagesBurger" />
+          </button>
+          <button class="btn">
+            <img src="./images/Group.svg" alt="Иконка" />
+          </button>
+        </div>
+        <button class="btn">
+          <img src="./images/search.svg" alt="Иконка" />
+        </button>
+      </div>
+      <aside>
+        <ul class="navbar__menu">
+          <li><a href="#" class="navbar__link first">Ремонт техники</a></li>
+          <li><a href="#" class="navbar__link">Услуги и сервисы</a></li>
+          <li><a href="#" class="navbar__link">Корпоративным клиентам</a></li>
+          <li><a href="#" class="navbar__link">Продавцам техники</a></li>
+          <li><a href="#" class="navbar__link">Партнерам</a></li>
+          <li><a href="#" class="navbar__link">Производителям</a></li>
+          <li><a href="#" class="navbar__link">Наши сервисные центры</a></li>
+          <li><a href="#" class="navbar__link">Контакты</a></li>
+        </ul>
+      </aside>
+      <footer class="navbar__footer">
+        <div class="contacts">
+          <div>
+            <button class="btn">
+              <img src="./images/chat copy.svg" alt="Иконка" />
+            </button>
+            <button class="btn">
+              <img src="./images/chat.svg" alt="Иконка" />
+            </button>
+            <button class="btn">
+              <img src="./images/profile.svg" alt="Иконка" />
+            </button>
+          </div>
+          <p><a href="mailto:mail@cps.com" class="contacts__mail">mail@cps.com </a></p>
+          <p>
+            <a href="tel:8 800 890 8900" class="contacts__tel">8 800 890 8900 </a>
+          </p>
+        </div>
+        <div>
+          <ul class="languages">
+            <button class="btn"><li class="languages__ruLang">RU</li></button>
+            <button class="btn"><li>EN</li></button>
+            <button class="btn"><li>CH</li></button>
+          </ul>
+        </div>
+      </footer>
+    </nav>
+  
+    
+    <div class="section-title"><p>РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</p></div>
+    <ul class="desktop brands">
+      <li class="brands__lenovo">
+        <img src="./images/lenovo.png" alt="Логотип Lenovo" />
+      </li>
+      <li class="brands__samsung">
+        <img src="./images/samsung.png" alt="Логотип Samsung" />
+      </li>
+      <li class="brands__apple">
+        <img src="./images/apple.png" alt="Логотип Apple" />
+      </li>
+      <li class="brands__viewsonic brands__viewsonic_hidden">
+        <img src="./images/viewsonic.png" alt="Логотип ViewSonic" />
+      </li>
+      <li class="brands__bosh">
+        <img src="./images/bosh.png" alt="Логотип Bosch" />
+      </li>
+      <li class="brands__hp">
+        <img src="./images/hp.png" alt="Логотип hp" />
+      </li>
+      <li class="brands__acer">
+        <img src="./images/acer.png" alt="Логотип acer" />
+      </li>
+      <li class="brands__sony brands__sony_hidden">
+        <img src="./images/sony.png" alt="Логотип SONY" />
+      </li>
+      <li class="hidden brands__lenovo_hidden">
+        <img src="./images/lenovo.png" alt="Логотип Lenovo" />
+      </li>
+      <li class="hidden brands__samsung_hidden">
+        <img src="./images/samsung.png" alt="Логотип Samsung" />
+      </li>
+      <li class="hidden brands__apple_hidden">
+        <img src="./images/apple.png" alt="Логотип Apple" />
+      </li>
+    </ul>
+    <section class="mobile swiper">
+      <ul class="brands swiper-wrapper">
+        <li class="swiper-slide brands__lenovo">
+          <img src="./images/lenovo.png" alt="Логотип Lenovo" />
+        </li>
+        <li class="swiper-slide brands__samsung">
+          <img src="./images/samsung.png" alt="Логотип Samsung" />
+        </li>
+        <li class="swiper-slide brands__apple">
+          <img src="./images/apple.png" alt="Логотип Apple" />
+        </li>
+        <li class="swiper-slide brands__viewsonic">
+          <img src="./images/viewsonic.png" alt="Логотип ViewSonic" />
+        </li>
+        <li class="swiper-slide brands__bosh">
+          <img src="./images/bosh.png" alt="Логотип Bosch" />
+        </li>
+        <li class="swiper-slide brands__hp">
+          <img src="./images/hp.png" alt="Логотип hp" />
+        </li>
+        <li class="swiper-slide brands__acer">
+          <img src="./images/acer.png" alt="Логотип acer" />
+        </li>
+        <li class="swiper-slide brands__sony">
+          <img src="./images/sony.png" alt="Логотип SONY" />
+        </li>
+        <li class="swiper-slide brands__lenovo_hidden">
+          <img src="./images/lenovo.png" alt="Логотип Lenovo" />
+        </li>
+        <li class="swiper-slide brands__samsung_hidden">
+          <img src="./images/samsung.png" alt="Логотип Samsung" />
+        </li>
+        <li class="swiper-slide brands__apple_hidden">
+          <img src="./images/apple.png" alt="Логотип Apple" />
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-scrollbar"></div>
+    </section>
+    <div class="list">
+      <button class="list__button list__button_show-all">
+        <img src="./images/exp.svg" alt="Иконка" />
+        <span>Показать все</span>
+      </button>
+      <button class="list__button list__button_hide-all">
+        <img src="./images/exp2.svg" alt="Иконка" /> <span>Скрыть</span>
+      </button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js.js"></script>
+  
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

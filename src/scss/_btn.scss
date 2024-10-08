@@ -1,0 +1,24 @@
+.btn {
+    border: none;
+    background-color:$white;
+    cursor: pointer;
+  
+  
+  &:hover {
+    filter: opacity(55%);
+  }
+  
+  &:active {
+    transform: scale(1.2);
+  }
+
+  &:focus {
+    transform: scale(0.9);
+  }
+  }
+
+  @media (min-width: 1120px) {
+    .btn {
+        background-color: $background;
+      }
+  }

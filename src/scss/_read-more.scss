@@ -1,0 +1,20 @@
+.read-more {
+    display: flex;
+    border: none;
+    white-space: nowrap;
+    background-color: #f8f8f8;
+    font-family: "TTLakesBold", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .read-more:focus {
+    color: #a3a3a5;
+  }
+  .read-more:hover {
+    color: #41d2f6;
+  }
+  
+  .read-more:active {
+    cursor: grabbing;
+  }

@@ -1,0 +1,23 @@
+
+.content {
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+}
+
+  @media (min-width: 768px) {
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+  }
+
+  

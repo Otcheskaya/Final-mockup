@@ -1,0 +1,30 @@
+.title {
+    font-size: 28px;
+    letter-spacing: -0.6px;
+    margin-bottom: 24px;
+    white-space: nowrap;
+  
+  &::before {
+    content: url(/images/highlight.svg);
+    background-color: $highlight-color;
+    margin-right: 12px;
+  }
+}
+
+  @media (min-width: 768px) {
+    .title {
+        font-size: 28px;
+        white-space: nowrap;}}
+
+        @media (min-width: 1120px) {
+          .title::before {
+            content: url(/images/highlight.svg);
+            background-color: $highlight-color;
+            margin-right: 30px;
+          }
+            .title {
+                transform: translateY(-70px);
+              } 
+              
+        }
+          
