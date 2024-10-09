@@ -9,10 +9,10 @@
   }
 
   .read-more:focus {
-    color: #a3a3a5;
+    color: $menu-text-color;
   }
   .read-more:hover {
-    color: #41d2f6;
+    filter: opacity(55%);
   }
   
   .read-more:active {

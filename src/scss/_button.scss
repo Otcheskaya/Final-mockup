@@ -1,34 +1,32 @@
-
 .button {
     border: none;
-    background-color: #f8f8f8;
+    background-color: $background;
     padding: 8px 16px;
     font-size: 16px;
     letter-spacing: -0.2px;
     line-height: 24px;
     cursor: pointer;
+  
+
+  &:focus {
+    transform: scale(0.9);
+  }
+  
+  &:hover {
+    filter: opacity(55%);
+  }
+  
+  &:active {
+    transform: scale(1.2);
   }
 
-  .button:focus {
-    background-color: rgb(234, 245, 244);
-    border: 1px solid #41d2f6;
-    border-radius: 6px;
   }
-  
-  .button:hover {
-    border: 2px solid #b8ffec;
-    background-color: #ffffff;
-    border-radius: 6px;
-  }
-  
-  .button:active {
-    border-radius: 6px;
-  }
-  
+
   .button__1 {
-    border: 2px solid #b8ffec;
+    border: 2px solid $border-color
+;
     border-radius: 6px;
-    background-color: #ffffff;
+    background-color: $white;
     display: block;
   }
   
@@ -44,7 +42,8 @@
   }
 
   .button__1 {
-    border: 2px solid #b8ffec;
+    border: 2px solid $border-color
+;
   }
 
   .button__3,
@@ -62,15 +61,17 @@
     }
   
     .button__0 {
-      border: 2px solid #b8ffec;
+      border: 2px solid $border-color
+;
       border-radius: 6px;
-      background-color: #ffffff;
+      background-color: $white;
       display: block;
     }
   
     .button__1 {
       border: none;
-      background-color: #f8f8f8;
+      background-color: $background
+;
     }
   
     .button__2 {
