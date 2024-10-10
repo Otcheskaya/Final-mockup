@@ -2,7 +2,7 @@
     display: flex;
     border: none;
     white-space: nowrap;
-    background-color: #f8f8f8;
+    background-color: $background;
     font-family: "TTLakesBold", sans-serif;
     font-size: 16px;
     cursor: pointer;
@@ -11,10 +11,12 @@
   .read-more:focus {
     color: $menu-text-color;
   }
+
   .read-more:hover {
-    filter: opacity(55%);
-  }
+    color: $main-text-color;
+
+}
   
   .read-more:active {
-    cursor: grabbing;
+    color: $black;
   }

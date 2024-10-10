@@ -16,7 +16,7 @@
         font-size: 28px;
         white-space: nowrap;}}
 
-        @media (min-width: 1120px) {
+        @media (min-width: 1440px) {
           .title::before {
             content: url(/images/highlight.svg);
             background-color: $highlight-color;

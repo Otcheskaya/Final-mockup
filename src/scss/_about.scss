@@ -4,8 +4,8 @@
     font-size: 14px;
   }
   
-  .about-history,
-  .about-optional {
+  .about__history,
+  .about__optional {
     display: none;
   }
   
@@ -19,12 +19,12 @@
         line-height: 20px;
       }
     }
-    @media (min-width: 1120px) {
-        .about-history {
+    @media (min-width: 1440px) {
+        .about__history {
             display: none;
           }
         
-          .about-optional {
+          .about__optional {
             display: block;
             line-height: 20px;
             font-family: "TTLakes", sans-serif;

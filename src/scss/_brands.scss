@@ -1,5 +1,5 @@
 
-@media (min-width: 1120px) {
+@media (min-width: 1440px) {
 
 .brands {
     display: grid;
@@ -9,7 +9,7 @@
   }
 }
 
-  @media (max-width: 1120px) {
+  @media (max-width: 1440px) {
     .brands {
       grid-template-columns: repeat(3, 1fr);
       gap: 16px 24px;

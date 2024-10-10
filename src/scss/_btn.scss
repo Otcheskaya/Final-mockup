@@ -1,3 +1,4 @@
+
 .btn {
     border: none;
     background-color:$white;
@@ -17,8 +18,17 @@
   }
   }
 
-  @media (min-width: 1120px) {
+  .btn_theme_navbar {
+   background-color: $background;
+  }
+
+
+  @media (min-width: 1440px) {
     .btn {
         background-color: $background;
+        &__repair,
+        &__checkstatus {
+          background-color: $white;
+        }
       }
   }

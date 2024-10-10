@@ -19,7 +19,7 @@
   body {
     font-size: 14px;
     color: #1b1c21;
-    background-color: #f8f8f8;
+    background-color: $background;
   }
 
   ul {
@@ -27,7 +27,3 @@
     padding: 0;
     list-style: none;
   }
-
-*:focus{
-  outline: 2px solid transparent;
-}

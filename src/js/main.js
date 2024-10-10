@@ -37,7 +37,7 @@ function initSwiper() {
         clickable: true,
       },
       slidesPerView: 2,
-      spaceBetween: 150,
+      spaceBetween: 10,
     });
   } else if (window.innerWidth > 768 && swiperInstance) {
     swiperInstance.destroy(true, true);
