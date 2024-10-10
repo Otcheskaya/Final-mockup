@@ -6,17 +6,18 @@
     font-family: "TTLakesBold", sans-serif;
     font-size: 16px;
     cursor: pointer;
-  }
+  
 
-  .read-more:focus {
+  &:focus {
     color: $menu-text-color;
   }
 
-  .read-more:hover {
+  &:hover {
     color: $main-text-color;
 
 }
   
-  .read-more:active {
+  &:active {
     color: $black;
   }
+}
