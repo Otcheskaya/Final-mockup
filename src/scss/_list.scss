@@ -1,14 +1,12 @@
-
-
 @media (max-width: 768px) {
-    .list__button,
-    .list__button {
-      opacity: 0;
-      }
+  .list__button,
+  .list__button {
+    opacity: 0;
   }
+}
 
 @media (min-width: 1440px) {
-.list__button_show-all {
+  .list__button_show-all {
     border: none;
     background-color: transparent;
     padding: 16px 24px;
@@ -17,14 +15,14 @@
   }
 }
 
-  @media (min-width: 768px) {
-    .list__button_show-all {
-        border: none;
-        background-color: transparent;
-        // padding: 16px 24px;
-        font-family: "TTLakesRegular";
-        font-size: 16px;
-      }
+@media (min-width: 768px) {
+  .list__button_show-all {
+    border: none;
+    background-color: transparent;
+    // padding: 16px 24px;
+    font-family: "TTLakesRegular";
+    font-size: 16px;
+  }
 
   .list__button_hide-all {
     display: none;
@@ -33,7 +31,5 @@
     padding: 16px 24px;
     font-family: "TTLakesRegular";
     font-size: 16px;
-  }}
-
-  
-            
+  }
+}

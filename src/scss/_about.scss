@@ -1,33 +1,33 @@
 .about {
-    line-height: 18px;
-    letter-spacing: 0.2px;
-    font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  font-size: 14px;
+}
+
+.about__history,
+.about__optional {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .about-history {
+    display: block;
+    line-height: 20px;
   }
-  
-  .about__history,
-  .about__optional {
+
+  .about {
+    line-height: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .about__history {
     display: none;
   }
-  
-  @media (min-width: 768px) {
-    .about-history {
-        display: block;
-        line-height: 20px;
-      }
-    
-      .about {
-        line-height: 20px;
-      }
-    }
-    @media (min-width: 1440px) {
-        .about__history {
-            display: none;
-          }
-        
-          .about__optional {
-            display: block;
-            line-height: 20px;
-            font-family: "TTLakes", sans-serif;
-            letter-spacing: 0.2px;
-          }
-    }
+
+  .about__optional {
+    display: block;
+    line-height: 20px;
+    font-family: "TTLakes", sans-serif;
+    letter-spacing: 0.2px;
+  }
+}

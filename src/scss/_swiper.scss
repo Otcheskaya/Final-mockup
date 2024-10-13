@@ -1,17 +1,17 @@
 @media (min-width: 1440px) {
-.swiper-button-prev,
-.swiper-button-next,
-.swiper-pagination,
-.swiper-scrollbar {
-  display: none;
-}}
+  .swiper-button-prev,
+  .swiper-button-next,
+  .swiper-pagination,
+  .swiper-scrollbar {
+    display: none;
+  }
+}
 
 @media (max-width: 768px) {
-    .swiper-wrapper {
-        max-width: 320px;
-      }
-      .swiper-pagination {
-        display: block;
-      }
-
+  .swiper-wrapper {
+    max-width: 320px;
+  }
+  .swiper-pagination {
+    display: block;
+  }
 }

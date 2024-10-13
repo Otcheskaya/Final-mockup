@@ -1,16 +1,15 @@
 .navbar {
-    position: relative;
-    width: 320px;
-    height: 100%;
-    box-shadow: 16px 0px 52px 0px $first-shadow-color, -2px 0px 4px 0px $second-shadow-color;
-    overflow-y: auto;
-    font-family: "TTLakesMedium", "Arial", "sans-serif";
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    color: $main-text-color;
-    
-  
+  position: relative;
+  width: 320px;
+  height: 100%;
+  box-shadow: 16px 0px 52px 0px $first-shadow-color,
+    -2px 0px 4px 0px $second-shadow-color;
+  overflow-y: auto;
+  font-family: "TTLakesMedium", "Arial", "sans-serif";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: $main-text-color;
 
   &__header {
     display: flex;
@@ -27,17 +26,17 @@
     margin-top: 46px;
     padding-left: 24px;
   }
-  
+
   &__link {
     text-decoration: none;
-    color:$main-text-color;
+    color: $main-text-color;
   }
-  
+
   &__link:hover {
     filter: opacity(55%);
   }
   &__link:active {
-    color:$highlight-color;
+    color: $highlight-color;
   }
 
   &__footer {

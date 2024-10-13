@@ -1,21 +1,19 @@
-
 // @media (min-width: 320px) {
-    .menu {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    align-items: center;
-    row-gap: 16px;
-    padding: 24px 16px;
-    border-bottom: 1px solid $border-menu;
-    background-color: $white;
-  
-  
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  align-items: center;
+  row-gap: 16px;
+  padding: 24px 16px;
+  border-bottom: 1px solid $border-menu;
+  background-color: $white;
+
   &__repair-text,
   &__checkstatus-text {
     display: none;
   }
-  
+
   &__call,
   &__chat,
   &__profile {
@@ -43,7 +41,7 @@
       justify-content: flex-end;
       border-bottom: none;
       background-color: $background;
-    } 
+    }
     &__call,
     &__chat,
     &__profile,
@@ -60,14 +58,14 @@
       font-size: 16px;
       align-items: center;
     }
-  
+
     &__repair-text,
     &__checkstatus-text {
       display: block;
       font-family: "TTLakesBold";
       font-size: 16px;
     }
-  
+
     &__repair img,
     &__checkstatus img {
       margin-left: 8px;

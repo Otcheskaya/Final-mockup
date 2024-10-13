@@ -1,12 +1,11 @@
 .read-more {
-    display: flex;
-    border: none;
-    white-space: nowrap;
-    background-color: $background;
-    font-family: "TTLakesBold", sans-serif;
-    font-size: 16px;
-    cursor: pointer;
-  
+  display: flex;
+  border: none;
+  white-space: nowrap;
+  background-color: $background;
+  font-family: "TTLakesBold", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
 
   &:focus {
     color: $menu-text-color;
@@ -14,9 +13,8 @@
 
   &:hover {
     color: $main-text-color;
+  }
 
-}
-  
   &:active {
     color: $black;
   }

@@ -1,47 +1,42 @@
 .button {
-    border: none;
-    background-color: $background;
-    padding: 8px 16px;
-    font-size: 16px;
-    letter-spacing: -0.2px;
-    line-height: 24px;
-    cursor: pointer;
-  
+  border: none;
+  background-color: $background;
+  padding: 8px 16px;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  line-height: 24px;
+  cursor: pointer;
 
   &:focus {
     border: 2px solid $border-color;
     border-radius: 6px;
-    
   }
-  
+
   &:hover {
     filter: opacity(55%);
   }
-  
+
   &:active {
     transform: scale(1.2);
     background-color: $white;
   }
+}
 
-  }
+.button:nth-child(2) {
+  border: 2px solid $border-color;
+  border-radius: 6px;
+  background-color: $white;
+  display: block;
+}
 
-  .button:nth-child(2) {
-    border: 2px solid $border-color
-;
-    border-radius: 6px;
-    background-color: $white;
-    display: block;
-  }
-  
-  .button:nth-child(5),
-  .button:last-child,
-  .button:first-child {
-    display: none;
-  }
+.button:nth-child(5),
+.button:last-child,
+.button:first-child {
+  display: none;
+}
 
-
-  @media (min-width: 768px) {  
-    .button {
+@media (min-width: 768px) {
+  .button {
     border: none;
     padding: 8px 10px 8px 16px;
   }
@@ -57,29 +52,25 @@
   }
 }
 @media (min-width: 1440px) {
-    
-    .button:first-child,
-    .button:nth-child(5),
-    .button:last-child {
-      display: block;
-    }
-  
-    .button:first-child {
-      border: 2px solid $border-color
-;
-      border-radius: 6px;
-      background-color: $white;
-      display: block;
-    }
-  
-    .button:nth-child(2) {
-      border: none;
-      background-color: $background
-;
-    }
-  
-    .button:nth-child(3) {
-      display: none;
-    }
+  .button:first-child,
+  .button:nth-child(5),
+  .button:last-child {
+    display: block;
+  }
 
+  .button:first-child {
+    border: 2px solid $border-color;
+    border-radius: 6px;
+    background-color: $white;
+    display: block;
+  }
+
+  .button:nth-child(2) {
+    border: none;
+    background-color: $background;
+  }
+
+  .button:nth-child(3) {
+    display: none;
+  }
 }

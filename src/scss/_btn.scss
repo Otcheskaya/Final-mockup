@@ -1,14 +1,12 @@
-
 .btn {
-    border: none;
-    background-color:$white;
-    cursor: pointer;
-  
-  
+  border: none;
+  background-color: $white;
+  cursor: pointer;
+
   &:hover {
     filter: opacity(55%);
   }
-  
+
   &:active {
     transform: scale(1.2);
   }
@@ -16,19 +14,18 @@
   &:focus {
     transform: scale(0.9);
   }
-  }
+}
 
-  .btn_theme_navbar {
-   background-color: $background;
-  }
+.btn_theme_navbar {
+  background-color: $background;
+}
 
-
-  @media (min-width: 1440px) {
-    .btn {
-        background-color: $background;
-        &__repair,
-        &__checkstatus {
-          background-color: $white;
-        }
-      }
+@media (min-width: 1440px) {
+  .btn {
+    background-color: $background;
+    &__repair,
+    &__checkstatus {
+      background-color: $white;
+    }
   }
+}

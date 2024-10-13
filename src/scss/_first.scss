@@ -1,12 +1,11 @@
 .first {
-    color:$menu-text-color;
-  
-&::before {
+  color: $menu-text-color;
+
+  &::before {
     content: url(./images/highlight.svg);
     background-color: $highlight-color;
     margin-right: 0;
     position: relative;
     left: -24px;
   }
-  
 }
