@@ -1,0 +1,10 @@
+.device {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+
+  &__item {
+    text-decoration: none;
+    color: $main-text-color;
+  }
+}
