@@ -1,6 +1,8 @@
 .table {
   width: 720px;
   height: 480px;
+  padding: 32px;
+  border-collapse: collapse;
 
   &__thead {
     font-family: "TTLakes", sans-serif;
@@ -12,5 +14,15 @@
 
   &__body {
     background-color: $white;
+    th,
+    td {
+      padding: 20px;
+      border-bottom: 2px solid $border-table;
+    }
+  }
+
+  &__footer {
+    font-weight: 800;
+    border: none;
   }
 }
