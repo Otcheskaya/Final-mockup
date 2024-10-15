@@ -1,13 +1,12 @@
-// @media (min-width: 320px) {
 .menu {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   list-style: none;
   align-items: center;
   row-gap: 16px;
-  padding: 24px 16px;
-  border-bottom: 1px solid $border-menu;
+  padding: 24px;
   background-color: $white;
+  border-bottom: 1px solid $border-menu;
 
   &__repair-text,
   &__checkstatus-text {
@@ -25,13 +24,13 @@
       content: url(/images/divider_1.svg);
       margin: 24px 20px;
     }
-    &__call {
-      display: block;
-    }
-    &__chat {
-      display: block;
-    }
-    &__profile {
+
+    &__call,
+    &__chat,
+    &__profile,
+    &__burger,
+    &__group,
+    &__divider {
       display: block;
     }
   }
@@ -41,35 +40,36 @@
       justify-content: flex-end;
       border-bottom: none;
       background-color: $background;
-    }
-    &__call,
-    &__chat,
-    &__profile,
-    &__burger,
-    &__group,
-    &__burger::after,
-    &__divider {
-      display: none;
-    }
 
-    &__repair,
-    &__checkstatus {
-      display: flex;
-      font-size: 16px;
-      align-items: center;
-    }
+      &__call,
+      &__chat,
+      &__profile,
+      &__burger,
+      &__group,
+      &__burger::after,
+      &__divider {
+        display: none;
+      }
 
-    &__repair-text,
-    &__checkstatus-text {
-      display: block;
-      font-family: "TTLakesBold";
-      font-size: 16px;
-    }
+      &__repair,
+      &__checkstatus {
+        display: flex;
+        font-size: 16px;
+        align-items: center;
+      }
 
-    &__repair img,
-    &__checkstatus img {
-      margin-left: 8px;
-      margin-right: 42px;
+      &__repair-text,
+      &__checkstatus-text {
+        display: block;
+        font-family: "TTLakesBold";
+        font-size: 16px;
+      }
+
+      &__repair img,
+      &__checkstatus img {
+        margin-left: 8px;
+        margin-right: 42px;
+      }
     }
   }
 }

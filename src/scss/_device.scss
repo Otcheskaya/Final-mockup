@@ -4,7 +4,10 @@
   gap: 32px;
 
   &__item {
-    text-decoration: none;
-    color: $main-text-color;
+    background-color: $white;
+    width: 224px;
+    height: 160px;
+    border-radius: 6px;
+    border: 1px solid $border-table;
   }
 }
