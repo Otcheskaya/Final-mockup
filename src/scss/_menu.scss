@@ -2,17 +2,19 @@
   display: flex;
   justify-content: space-between;
   list-style: none;
-  align-items: center;
-  row-gap: 16px;
-  padding: 24px;
+  // align-items: center;
+  padding: 18px;
   background-color: $white;
   border-bottom: 1px solid $border-menu;
 
-  &__repair-text,
-  &__checkstatus-text {
-    display: none;
+  &__section {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
   }
 
+  &__repair-text,
+  &__checkstatus-text,
   &__call,
   &__chat,
   &__profile {
@@ -22,54 +24,51 @@
   @media (min-width: 768px) {
     &__burger::after {
       content: url(/images/divider_1.svg);
-      margin: 24px 20px;
+      margin-left: 20px;
     }
+
+    &__call,
+    &__chat,
+    &__profile,
+    &__divider {
+      display: block;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .menu {
+    justify-content: flex-end;
+    border-bottom: none;
+    background-color: $background;
 
     &__call,
     &__chat,
     &__profile,
     &__burger,
     &__group,
+    &__burger::after,
     &__divider {
-      display: block;
+      display: none;
     }
-  }
 
-  @media (min-width: 1440px) {
-    .menu {
-      justify-content: flex-end;
-      border-bottom: none;
-      background-color: $background;
+    &__repair,
+    &__checkstatus {
+      display: flex;
+      font-size: 16px;
+      align-items: center;
+    }
 
-      &__call,
-      &__chat,
-      &__profile,
-      &__burger,
-      &__group,
-      &__burger::after,
-      &__divider {
-        display: none;
-      }
+    &__repair-text,
+    &__checkstatus-text {
+      display: block;
+      font-family: "TTLakesBold";
+      font-size: 16px;
+    }
 
-      &__repair,
-      &__checkstatus {
-        display: flex;
-        font-size: 16px;
-        align-items: center;
-      }
-
-      &__repair-text,
-      &__checkstatus-text {
-        display: block;
-        font-family: "TTLakesBold";
-        font-size: 16px;
-      }
-
-      &__repair img,
-      &__checkstatus img {
-        margin-left: 8px;
-        margin-right: 42px;
-      }
+    &__repair img,
+    &__checkstatus img {
+      margin-left: 8px;
+      margin-right: 42px;
     }
   }
 }

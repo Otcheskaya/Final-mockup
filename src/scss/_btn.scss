@@ -23,9 +23,5 @@
 @media (min-width: 1440px) {
   .btn {
     background-color: $background;
-    &__repair,
-    &__checkstatus {
-      background-color: $white;
-    }
   }
 }
