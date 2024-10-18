@@ -1,8 +1,18 @@
 .table {
   width: 720px;
-  height: 480px;
-  padding: 32px;
+  height: 356px;
+  @media (min-width: 1440px) {
+    width: 1056px;
+    height: 488px;
+  }
+  // padding: 32px;
   border-collapse: collapse;
+  @media (min-width: 768px) {
+    margin-left: 24px;
+  }
+  @media (min-width: 1440px) {
+    margin-left: 32px;
+  }
 
   &__thead {
     font-family: "TTLakes", sans-serif;
@@ -14,6 +24,9 @@
 
   &__body {
     background-color: $white;
+    // margin-bottom: 24px;
+    @media (min-width: 1440px) {
+    }
     th,
     td {
       padding: 20px;
@@ -21,8 +34,8 @@
     }
   }
 
-  &__footer {
-    font-weight: 800;
-    border: none;
-  }
+  //   &__footer {
+  //     border-collapse: separate;
+  //     border: 24px;
+  //   }
 }

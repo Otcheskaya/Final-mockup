@@ -78,7 +78,7 @@
         </nav>
       </div>
 
-      <div>
+      <div class="container">
         <header>
           <nav>
             <ul class="menu">
@@ -252,7 +252,7 @@
         <div class="list">
           <button class="list__button list__button_show-all">
             <img src="./images/exp.svg" alt="Иконка" />
-            <div>Показать все</div>
+            <span> Показать все</span>
           </button>
           <button class="list__button list__button_hide-all">
             <img src="./images/exp2.svg" alt="Иконка" /> <span>Скрыть</span>
@@ -260,7 +260,9 @@
         </div>
 
         <section>
-          <h2 class="section-title">РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</h2>
+          <div class="section-title">
+            <h2>РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</h2>
+          </div>
           <ul class="device">
             <li class="device__item">
               <p>Ремонт ноутбуков</p>
@@ -278,15 +280,15 @@
               <p>Ремонт мониторов</p>
               <a href="#"><img src="./images/go.svg" alt="Иконка" /></a>
             </li>
-            <li class="device__item">
+            <li class="device__item device__item_hidden">
               <p>Ремонт смартфонов</p>
               <a href="#"><img src="./images/go.svg" alt="Иконка" /></a>
             </li>
-            <li class="device__item">
+            <li class="device__item device__item_hidden">
               <p>Ремонт телевизоров</p>
               <a href="#"><img src="./images/go.svg" alt="Иконка" /></a>
             </li>
-            <li class="device__item">
+            <li class="device__item device__item_hidden">
               <p>Ремонт IP-камер</p>
               <a href="#"><img src="./images/go.svg" alt="Иконка" /></a>
             </li>
@@ -295,11 +297,11 @@
           <div class="list">
             <button class="list__button list__button_show-all">
               <img src="./images/exp.svg" alt="Иконка" />
-              <div>Показать все</div>
+              <span>Показать все</span>
             </button>
             <button class="list__button list__button_hide-all">
               <img src="./images/exp2.svg" alt="Иконка" />
-              <div>Скрыть</div>
+              <span>Скрыть</span>
             </button>
           </div>
         </section>
@@ -366,7 +368,7 @@
                 </td>
               </tr>
             </tbody>
-            <tfoot>
+            <tfoot class="table__footer">
               <tr>
                 <td>
                   Все цены указаны с учетом НДС. Стоимость ремонта указана на
@@ -376,9 +378,7 @@
               </tr>
               <tr>
                 <td>
-                  <span class="table__footer">
-                    Получить коммерческое предложение
-                  </span>
+                  <b>Получить коммерческое предложение </b>
                   <img src="/images/Line.svg" alt="Иконка" />
                 </td>
               </tr>

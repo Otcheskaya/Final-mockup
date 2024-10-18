@@ -1,7 +1,14 @@
 .device {
-  display: flex;
-  flex-direction: row;
-  gap: 32px;
+  display: grid;
+  grid-template-columns: repeat(4, 240px);
+  gap: 16px 32px;
+  padding-left: 16px;
+  @media (min-width: 768px) {
+    padding-left: 24px;
+  }
+  @media (min-width: 1440px) {
+    padding-left: 32px;
+  }
 
   &__item {
     background-color: $white;
@@ -9,5 +16,11 @@
     height: 160px;
     border-radius: 6px;
     border: 1px solid $border-table;
+
+    // &_hidden {
+    //   @media (min-width: 1440px) {
+    //     display: none;
+    //   }
+    // }
   }
 }

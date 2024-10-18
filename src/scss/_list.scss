@@ -2,6 +2,7 @@
   .list__button,
   .list__button {
     opacity: 0;
+    padding-left: 16px;
   }
 }
 
@@ -9,7 +10,7 @@
   .list__button_show-all {
     border: none;
     background-color: transparent;
-    padding: 16px 24px;
+    padding-left: 32px;
     font-family: "TTLakesRegular";
     font-size: 16px;
   }
@@ -19,7 +20,7 @@
   .list__button_show-all {
     border: none;
     background-color: transparent;
-    // padding: 16px 24px;
+    padding-left: 24px;
     font-family: "TTLakesRegular";
     font-size: 16px;
   }
