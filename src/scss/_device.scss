@@ -17,10 +17,10 @@
     border-radius: 6px;
     border: 1px solid $border-table;
 
-    // &_hidden {
-    //   @media (min-width: 1440px) {
-    //     display: none;
-    //   }
-    // }
+    &_hidden {
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
   }
 }

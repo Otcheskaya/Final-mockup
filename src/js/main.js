@@ -49,3 +49,25 @@ document.addEventListener("DOMContentLoaded", initSwiper);
 window.addEventListener("resize", function () {
   initSwiper();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const showAllButton = document.querySelector(".list__button_show");
+  const hideAllButton = document.querySelector(".list__button_hide");
+  const hiddenItems = document.querySelectorAll(".device__item_hidden");
+
+  showAllButton.addEventListener("click", function () {
+    hiddenItems.forEach((item) => {
+      item.classList.remove("device__item_hidden");
+    });
+    showAllButton.style.display = "none";
+    hideAllButton.style.display = "block";
+  });
+
+  hideAllButton.addEventListener("click", function () {
+    hiddenItems.forEach((item) => {
+      item.classList.add("device__item_hidden");
+    });
+    hideAllButton.style.display = "none";
+    showAllButton.style.display = "block";
+  });
+});
