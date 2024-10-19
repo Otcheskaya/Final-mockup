@@ -1,5 +1,8 @@
-@media (min-width: 1440px) {
-  .hidden {
+.hidden {
+  @media (min-width: 768px) {
+    display: none;
+  }
+  @media (min-width: 1440px) {
     display: none;
   }
 }
