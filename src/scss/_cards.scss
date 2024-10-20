@@ -1,5 +1,7 @@
 .cards {
   display: flex;
+  //   flex-wrap: wrap;
+  padding-left: 16px;
 
   &__item {
     width: 260px;
@@ -11,14 +13,19 @@
     letter-spacing: 0.2px;
   }
 
-  &__footer {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-top: 24px;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
 
-    @media (min-width: 768px) {
-      display: none;
-    }
+.cards__footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  padding-left: 16px;
+  gap: 16px;
+  width: 288px;
+  @media (min-width: 768px) {
+    display: none;
   }
 }

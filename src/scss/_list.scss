@@ -1,5 +1,7 @@
 .list__button {
   padding-left: 16px;
+  border: none;
+  background-color: transparent;
 
   @media (min-width: 768px) {
     padding-left: 24px;
@@ -10,24 +12,18 @@
 }
 
 @media (min-width: 768px) {
-  .list__button_show-all {
+  .list__button_show-all,
+  .list__button_hide-all {
     border: none;
     background-color: transparent;
     padding-left: 24px;
     font-family: "TTLakesRegular";
     font-size: 16px;
   }
-
-  .list__button_hide-all {
-    border: none;
-    background-color: transparent;
-    padding: 16px 24px;
-    font-family: "TTLakesRegular";
-    font-size: 16px;
-  }
 }
 @media (min-width: 1440px) {
-  .list__button_show-all {
+  .list__button_show-all,
+  .list__button_hide-all {
     border: none;
     background-color: transparent;
     padding-left: 32px;
@@ -37,24 +33,18 @@
 }
 
 @media (min-width: 768px) {
-  .list__button_show {
+  .list__button_show,
+  .list__button_hide {
     border: none;
     background-color: transparent;
     padding-left: 24px;
     font-family: "TTLakesRegular";
     font-size: 16px;
   }
-
-  .list__button_hide {
-    border: none;
-    background-color: transparent;
-    padding: 16px 24px;
-    font-family: "TTLakesRegular";
-    font-size: 16px;
-  }
 }
 @media (min-width: 1440px) {
-  .list__button_show {
+  .list__button_show,
+  .list__button_hide {
     border: none;
     background-color: transparent;
     padding-left: 32px;
