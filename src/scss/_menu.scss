@@ -1,6 +1,5 @@
 .menu {
   display: flex;
-  justify-content: space-between;
   list-style: none;
   // align-items: center;
   padding: 18px;
@@ -22,6 +21,7 @@
   }
 
   @media (min-width: 768px) {
+    justify-content: space-between;
     &__burger::after {
       content: url(/images/divider_1.svg);
       margin-left: 20px;
@@ -34,9 +34,8 @@
       display: block;
     }
   }
-}
-@media (min-width: 1440px) {
-  .menu {
+
+  @media (min-width: 1440px) {
     justify-content: flex-end;
     border-bottom: none;
     background-color: $background;

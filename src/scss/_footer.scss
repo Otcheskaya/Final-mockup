@@ -1,11 +1,19 @@
 .footer {
   display: flex;
-  flex-direction: row;
-  padding-top: 80px;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 40px;
+  flex-direction: column;
+  gap: 16px;
   color: $menu-text-color;
   border-top: 1px solid $border-menu;
-  padding: 32px;
+  margin-top: 40px;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    padding-top: 80px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    color: $menu-text-color;
+    border-top: 1px solid $border-menu;
+    padding: 32px;
+    margin-top: 50px;
+  }
 }

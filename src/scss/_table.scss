@@ -1,17 +1,24 @@
 .table {
-  width: 720px;
-  height: 356px;
+  display: none;
+
   @media (min-width: 1440px) {
+    display: block;
     width: 1056px;
     height: 488px;
+    margin-top: 32px;
   }
-  // padding: 32px;
+
   border-collapse: collapse;
   @media (min-width: 768px) {
+    display: block;
+    width: 720px;
+    height: 480px;
     margin-left: 24px;
+    margin-top: 32px;
   }
   @media (min-width: 1440px) {
     margin-left: 32px;
+    margin-top: 32px;
   }
 
   &__thead {
@@ -20,11 +27,15 @@
     font-weight: 100;
     opacity: 0.7;
     text-align: left;
+
+    th {
+      padding-bottom: 16px;
+    }
   }
 
   &__body {
     background-color: $white;
-    // margin-bottom: 24px;
+
     @media (min-width: 1440px) {
     }
     th,
@@ -34,8 +45,13 @@
     }
   }
 
-  //   &__footer {
-  //     border-collapse: separate;
-  //     border: 24px;
-  //   }
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+    @media (min-width: 1440px) {
+      margin-top: 32px;
+    }
+  }
 }

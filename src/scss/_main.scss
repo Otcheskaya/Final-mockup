@@ -23,13 +23,21 @@ h2 {
   color: $menu-text-color;
 }
 
+h3 {
+  font-family: "TTLakes", sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  color: $menu-text-color;
+}
+
 body {
   font-size: 14px;
   color: #1b1c21;
   background-color: $background;
 }
 
-ul {
+ul,
+dl {
   margin: 0;
   padding: 0;
   list-style: none;
