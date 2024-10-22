@@ -1,18 +1,24 @@
 .device {
-  display: grid;
-  grid-template-columns: repeat(4, 240px);
-  gap: 16px 32px;
+  display: flex;
   padding-left: 16px;
+  gap: 16px;
+
   @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(3, 224px);
+    gap: 16px 24px;
     padding-left: 24px;
   }
   @media (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: repeat(4, 240px);
+    gap: 16px 32px;
     padding-left: 32px;
   }
 
   &__item {
     background-color: $white;
-    width: 224px;
+    width: 224px !important;
     height: 160px;
     border-radius: 6px;
     border: 1px solid $border-table;

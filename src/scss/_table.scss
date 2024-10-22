@@ -1,14 +1,15 @@
 .table {
   display: none;
+  border-collapse: collapse;
+  table-layout: fixed;
 
   @media (min-width: 1440px) {
     display: block;
-    width: 1056px;
+    width: 1056px !important;
     height: 488px;
     margin-top: 32px;
   }
 
-  border-collapse: collapse;
   @media (min-width: 768px) {
     display: block;
     width: 720px;
