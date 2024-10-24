@@ -1,11 +1,11 @@
 .modal {
   width: 440px;
   height: 940px;
-  padding-left: 30px;
+  padding-left: 32px;
   background-color: $white;
 
   &__title {
-    margin-top: 40px;
+    padding-top: 40px;
     &::before {
       content: url(/images/highlight.svg);
       background-color: $highlight-color;
@@ -37,6 +37,6 @@
     border: none;
     margin-top: 23px;
     position: relative;
-    left: 240px;
+    left: 238px;
   }
 }
