@@ -21,15 +21,26 @@
     gap: 16px;
     color: $modal-form;
     font-size: 16px;
-    color: $border-table;
-    border-radius: 8px;
+    color: $modal-form;
+
     padding-bottom: 16px;
+    input {
+      height: 48px;
+      border-radius: 8px;
+      border: 1px solid $border-table;
+    }
+    textarea {
+      height: 118px;
+      border-radius: 8px;
+      border: 1px solid $border-table;
+    }
   }
   &__text {
     width: 376px;
+    line-height: 16px;
+    font-size: 14px;
     &_pink {
       color: $modal-text;
-      font-size: 14px;
     }
   }
   &__btn {
