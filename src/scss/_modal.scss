@@ -1,53 +1,75 @@
 .modal {
-  width: 440px;
-  height: 940px;
-  padding-left: 32px;
+  padding-left: 16px;
+  width: 320px;
+  height: 676px;
   background-color: $white;
+
+  @media (min-width: 1440px) {
+    width: 440px;
+    height: 940px;
+    padding-left: 32px;
+  }
 
   &__title {
     padding-top: 40px;
+
     &::before {
       content: url(/images/highlight.svg);
       background-color: $highlight-color;
       position: relative;
-      right: 30px;
+      right: 16px;
+      @media (min-width: 1440px) {
+        position: relative;
+        right: 30px;
+      }
     }
   }
 
   &__form {
     display: flex;
     flex-direction: column;
-    width: 376px;
     gap: 16px;
     color: $modal-form;
     font-size: 16px;
-    color: $modal-form;
-
+    width: 288px;
     padding-bottom: 16px;
+    @media (min-width: 1440px) {
+      width: 376px;
+    }
     input {
       height: 48px;
       border-radius: 8px;
       border: 1px solid $border-table;
+      padding-left: 16px;
     }
     textarea {
       height: 118px;
       border-radius: 8px;
       border: 1px solid $border-table;
+      padding-left: 16px;
     }
   }
   &__text {
-    width: 376px;
+    width: 288px;
     line-height: 16px;
     font-size: 14px;
+    @media (min-width: 1440px) {
+      width: 376px;
+    }
+
     &_pink {
       color: $modal-text;
     }
   }
+
   &__btn {
     background-color: $white;
     border: none;
     margin-top: 23px;
-    position: relative;
-    left: 238px;
+    left: 168px;
+    @media (min-width: 1440px) {
+      position: relative;
+      left: 238px;
+    }
   }
 }
