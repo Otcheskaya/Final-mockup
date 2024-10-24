@@ -1,0 +1,42 @@
+.modal {
+  width: 440px;
+  height: 940px;
+  padding-left: 30px;
+  background-color: $white;
+
+  &__title {
+    margin-top: 40px;
+    &::before {
+      content: url(/images/highlight.svg);
+      background-color: $highlight-color;
+      position: relative;
+      right: 30px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 376px;
+    gap: 16px;
+    color: $modal-form;
+    font-size: 16px;
+    color: $border-table;
+    border-radius: 8px;
+    padding-bottom: 16px;
+  }
+  &__text {
+    width: 376px;
+    &_pink {
+      color: $modal-text;
+      font-size: 14px;
+    }
+  }
+  &__btn {
+    background-color: $white;
+    border: none;
+    margin-top: 23px;
+    position: relative;
+    left: 240px;
+  }
+}
