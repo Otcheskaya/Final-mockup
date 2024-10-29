@@ -25,6 +25,11 @@
     }
   }
 
+  &__close {
+    border: none;
+    background-color: $white;
+  }
+
   &__form {
     display: flex;
     flex-direction: column;
