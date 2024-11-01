@@ -2,10 +2,27 @@
   display: flex;
   padding-left: 16px;
   gap: 16px;
+  margin: 0;
+
+  &__item {
+    background-color: $white;
+    width: 224px;
+    height: 72px;
+    padding: 16px;
+    border-radius: 6px;
+  }
+
+  &__icon {
+    padding-left: 15px;
+  }
+
   &__sony,
   &__viewsonic {
     display: block;
+    background-color: $white;
+    border: solid 1px $border-table;
   }
+
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: repeat(3, 224px);
