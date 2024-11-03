@@ -22,6 +22,14 @@
     height: 160px;
     border-radius: 6px;
     border: 1px solid $border-table;
+    position: relative;
+    padding-left: 16px;
+
+    img {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
 
     &_hidden {
       @media (min-width: 768px) {
