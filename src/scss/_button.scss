@@ -23,10 +23,9 @@
 }
 
 .button:nth-child(2) {
-  border: 2px solid $border-color;
+  // border: 2px solid $border-color;
   border-radius: 6px;
-  background-color: $white;
-
+  // background-color: $white;
   display: block;
 }
 
@@ -60,16 +59,15 @@
   }
 
   .button:first-child {
-    border: 2px solid $border-color;
+    // border: 2px solid $border-color;
     border-radius: 6px;
-    background-color: $white;
+    // background-color: $white;
     display: block;
   }
 
-  .button:nth-child(2) {
-    // border: none;
-    background-color: $background;
-  }
+  // .button:nth-child(2) {
+  //   background-color: $background;
+  // }
 
   .button:nth-child(3) {
     display: none;

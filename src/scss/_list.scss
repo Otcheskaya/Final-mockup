@@ -25,9 +25,11 @@
     font-size: 16px;
     @media (min-width: 768px) {
       padding-left: 24px;
+      display: block;
     }
     @media (min-width: 1440px) {
       padding-left: 32px;
+      display: block;
     }
   }
   &_show {
@@ -37,9 +39,11 @@
     font-family: "TTLakesRegular";
     font-size: 16px;
     @media (min-width: 768px) {
+      display: block;
       padding-left: 24px;
     }
     @media (min-width: 1440px) {
+      display: block;
       padding-left: 32px;
     }
   }
