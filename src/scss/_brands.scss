@@ -10,9 +10,13 @@
     height: 72px;
     padding: 16px;
     border-radius: 6px;
+    position: relative;
   }
 
   &__icon {
+    position: absolute;
+    display: inline-block;
+    right: 16px;
   }
 
   &__sony,
