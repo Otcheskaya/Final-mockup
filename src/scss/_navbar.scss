@@ -43,8 +43,9 @@
     text-decoration: none;
     color: $main-text-color;
 
-    &_active {
+    &:hover {
       color: $menu-text-color;
+      filter: opacity(55%);
       &::before {
         content: url(./images/highlight.svg);
         background-color: $highlight-color;
@@ -56,21 +57,9 @@
         }
       }
     }
-  }
 
-  &__link:hover {
-    filter: opacity(55%);
-  }
-  &__link:active {
-    color: $highlight-color;
-  }
-
-  &__footer {
-    // position: absolute;
-
-    // margin-top: 32px;
-    @media (min-width: 768px) {
-      // margin-top: 268px;
+    &:active {
+      color: $highlight-color;
     }
   }
 }
