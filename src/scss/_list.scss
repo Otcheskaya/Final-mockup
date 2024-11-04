@@ -2,6 +2,10 @@
   padding-left: 16px;
   border: none;
   background-color: transparent;
+  position: relative;
+  margin-top: 24px;
+  margin-left: 30px;
+
   @media (max-width: 768px) {
     visibility: hidden;
   }
@@ -12,50 +16,45 @@
   @media (min-width: 1440px) {
     padding-left: 32px;
   }
-}
 
-@media (min-width: 768px) {
-  .list__button_show-all {
+  &_show-all {
+    display: none;
     border: none;
     background-color: transparent;
-    padding-left: 24px;
     font-family: "TTLakesRegular";
     font-size: 16px;
+    @media (min-width: 768px) {
+      padding-left: 24px;
+    }
+    @media (min-width: 1440px) {
+      padding-left: 32px;
+    }
   }
-}
-@media (min-width: 1440px) {
-  .list__button_show-all {
+  &_show {
+    display: none;
     border: none;
     background-color: transparent;
-    padding-left: 32px;
     font-family: "TTLakesRegular";
     font-size: 16px;
+    @media (min-width: 768px) {
+      padding-left: 24px;
+    }
+    @media (min-width: 1440px) {
+      padding-left: 32px;
+    }
   }
-}
 
-@media (min-width: 768px) {
-  .list__button_show {
-    border: none;
-    background-color: transparent;
-    padding-left: 24px;
-    font-family: "TTLakesRegular";
-    font-size: 16px;
+  &_hide {
+    display: none;
   }
-}
-@media (min-width: 1440px) {
-  .list__button_show {
-    border: none;
-    background-color: transparent;
-    padding-left: 32px;
-    font-family: "TTLakesRegular";
-    font-size: 16px;
+
+  &_hide-all {
+    display: none;
   }
-}
 
-.list__button_hide {
-  display: none;
-}
-
-.list__button_hide-all {
-  display: none;
+  img {
+    display: inline-block;
+    position: absolute;
+    left: 3px;
+  }
 }
