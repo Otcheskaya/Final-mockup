@@ -3,7 +3,7 @@
   width: 320px;
   height: 676px;
   background-color: $white;
-  visibility: hidden;
+  // visibility: hidden;
 
   @media (min-width: 1440px) {
     width: 440px;
@@ -66,27 +66,26 @@
 
     &_pink {
       color: $modal-text;
+      cursor: pointer;
     }
   }
 
   &__btn {
-    background-color: $white;
-    border: none;
-    margin-top: 23px;
-    position: relative;
-    left: 145px;
+    width: 136px;
+    height: 32px;
+    background: #ff3e79;
+    color: #ffffff;
+    float: right;
+    border: 0;
+    border-radius: 16px;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+    text-align: center;
+    font-weight: 600;
+    margin-right: 16px;
     @media (min-width: 1440px) {
-      position: relative;
-      left: 340px;
-    }
-  }
-  img {
-    position: relative;
-    top: 24px;
-
-    @media (min-width: 1440px) {
-      position: relative;
-      right: 97px;
+      margin-right: 32px;
     }
   }
 }
