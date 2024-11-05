@@ -10,7 +10,12 @@
     height: 940px;
     padding-left: 32px;
   }
-
+  &__input {
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid $border-table;
+    padding-left: 16px;
+  }
   &__title {
     padding-top: 40px;
 
@@ -42,12 +47,7 @@
     @media (min-width: 1440px) {
       width: 376px;
     }
-    input {
-      height: 48px;
-      border-radius: 8px;
-      border: 1px solid $border-table;
-      padding-left: 16px;
-    }
+
     textarea {
       height: 118px;
       border-radius: 8px;
@@ -84,6 +84,7 @@
     text-align: center;
     font-weight: 600;
     margin-right: 16px;
+    cursor: pointer;
     @media (min-width: 1440px) {
       margin-right: 32px;
     }
