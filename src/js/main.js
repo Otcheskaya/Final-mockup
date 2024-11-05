@@ -81,6 +81,17 @@ menuCloseBtn.addEventListener("click", toogleMenu);
 menuCloseBlur?.addEventListener("click", closeMenu);
 const navBody = document.querySelector(".navbar");
 
+// Read more
+
+document.getElementById("toggleButton").addEventListener("click", function () {
+  const about = document.getElementById("about");
+  if (about.classList.contains("about_hidden")) {
+    about.classList.remove("about_hidden");
+  } else {
+    about.classList.add("about_hidden");
+  }
+});
+
 export function openMenu() {
   if (navBody)
     navBody.style.boxShadow =
