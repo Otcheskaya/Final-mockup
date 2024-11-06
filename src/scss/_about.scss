@@ -2,6 +2,13 @@
   line-height: 18px;
   letter-spacing: 0.2px;
   font-size: 14px;
+  @media (min-width: 768px) {
+    line-height: 20px;
+  }
+  // @media (max-width: 420px) {
+  //   width: 288px;
+  // }
+
   &_hidden {
     display: none;
   }
@@ -31,4 +38,5 @@
 #about {
   line-height: 20px;
   margin-right: 8px;
+  letter-spacing: 0.2px;
 }
