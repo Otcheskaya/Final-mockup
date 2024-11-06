@@ -3,7 +3,12 @@
   overflow: hidden;
 }
 .swiper-pagination {
-  display: block;
+  display: none;
+}
+
+.swiper-slide {
+  display: flex;
+  width: 240px;
 }
 
 @media (min-width: 1440px) {
