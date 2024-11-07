@@ -1,16 +1,25 @@
 .cards {
   display: flex;
-  //   flex-wrap: wrap;
+  flex-wrap: wrap;
   padding-left: 16px;
 
   &__item {
     width: 260px;
-    height: 200px;
+    height: 220px;
     border-radius: 6px;
     background-color: $white;
     margin-right: 16px;
     line-height: 18px;
     letter-spacing: 0.2px;
+    font-size: 14px;
+    padding: 10px;
+    position: relative;
+
+    img {
+      position: absolute;
+      left: 120px;
+      bottom: 20px;
+    }
   }
 
   @media (min-width: 768px) {
