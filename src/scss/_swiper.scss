@@ -1,10 +1,11 @@
 .swiper {
   width: 768px;
+  // height: 120px;
 }
 
 .swiper-wrapper {
   width: 768px;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .swiper-slide {
@@ -12,4 +13,16 @@
   width: 240px !important;
   justify-content: center;
   align-items: center;
+  margin-bottom: 28px;
+}
+
+.swiper-pagination {
+}
+
+.swiper-pagination-bullet {
+  background: #dddddd;
+}
+
+.swiper-pagination-bullet-active {
+  background: $modal-form;
 }
