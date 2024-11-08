@@ -1,9 +1,24 @@
 .modal {
-  padding-left: 16px;
-  width: 320px;
-  height: 676px;
+  // padding-left: 16px;
+  // width: 320px;
+  // height: 676px;
   background-color: $white;
   // visibility: hidden;
+  display: none; /* Скрыто по умолчанию */
+  position: fixed; /* Остается на месте */
+  // z-index: 1; /* Сидит на вершине */
+  // left: 0;
+  // top: 0;
+  // width: 100%; /* Полная ширина */
+  // height: 100%; /* Полная высота */
+  height: 100%;
+  width: 100%;
+  background: $white;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 80vw;
+  transition: 0.5s ease;
 
   @media (min-width: 1440px) {
     width: 440px;
@@ -90,5 +105,11 @@
     @media (min-width: 1440px) {
       margin-left: 240px;
     }
+  }
+
+  &__content {
+    width: 320px;
+    height: 100vh;
+    background-color: $white;
   }
 }

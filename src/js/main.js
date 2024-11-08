@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 let swiperInstance;
+
 function initSwiper() {
   if (window.innerWidth <= 768 && !swiperInstance) {
     swiperInstance = new Swiper(".swiper", {
@@ -35,8 +36,8 @@ function initSwiper() {
         el: ".swiper-pagination",
         clickable: true,
       },
-      slidesPerView: 2,
-      spaceBetween: 5,
+      slidesPerView: 1,
+      spaceBetween: 10,
     });
   } else if (window.innerWidth > 768 && swiperInstance) {
     swiperInstance.destroy(true, true);
@@ -119,3 +120,25 @@ function toogleMenu() {
     closeMenu();
   }
 }
+
+// Modal windows
+const modal = document.getElementById("myModal");
+const btn = document.getElementById("openModal");
+const span = document.getElementsByClassName(".modal__close")[0];
+
+// Когда пользователь нажимает на кнопку, открываем модальное окно
+btn.onclick = function () {
+  modal.style.display = "block";
+};
+
+// Когда пользователь нажимает на <span> (x), закрываем модальное окно
+span.onclick = function () {
+  modal.style.display = "none";
+};
+
+// Когда пользователь кликает в любом месте за пределами модального окна, закрываем его
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};

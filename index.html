@@ -45,7 +45,7 @@
             <footer class="navbar__footer">
               <div class="contacts">
                 <div>
-                  <button class="btn btn_theme_navbar">
+                  <button id="openModal" class="btn btn_theme_navbar">
                     <img src="./images/chat copy.svg" alt="Иконка" />
                   </button>
                   <button class="btn btn_theme_navbar">
@@ -410,8 +410,10 @@
         </div>
 
         <h2 class="section-title">ЦЕНЫ НА УСЛУГИ</h2>
+        <div class="mobile swiper"> 
+          <div class="swiper-wrapper">
         <div class="cards">
-          <div class="cards__item">
+          <div class="cards__item swiper-slide">
             <div>
               <h3>Ремонтные услуги</h3>
               <p>Диагностика</p>
@@ -426,7 +428,7 @@
             </div>
             <a href="#"><img src="/images/Group 10.svg" alt="Иконка" /></a>
           </div>
-          <div class="cards__item">
+          <div class="cards__item swiper-slide">
             <div>
               <h3>Ремонтные услуги</h3>
               <p>Замена дисплея</p>
@@ -441,7 +443,7 @@
             </div>
             <a href="#"><img src="/images/Group 10.svg" alt="Иконка" /></a>
           </div>
-          <div class="cards__item">
+          <div class="cards__item swiper-slide">
             <div>
               <h3>Ремонтные услуги</h3>
               <p>Замена полифонического динамика</p>
@@ -456,7 +458,7 @@
             </div>
             <a href="#"><img src="/images/Group 10.svg" alt="Иконка" /></a>
           </div>
-          <div class="cards__item">
+          <div class="cards__item swiper-slide">
             <div>
               <h3>Ремонтные услуги</h3>
               <p>Тестирование с выдачей технического заключения</p>
@@ -471,7 +473,7 @@
             </div>
             <a href="#"><img src="/images/Group 10.svg" alt="Иконка" /></a>
           </div>
-          <div class="cards__item">
+          <div class="cards__item swiper-slide">
             <div>
               <h3>Ремонтные услуги</h3>
               <p>Замена программного обеспечения</p>
@@ -487,6 +489,11 @@
             <a href="#"><img src="/images/Group 10.svg" alt="Иконка" /></a>
           </div>
         </div>
+      </div>
+      <div class="swiper-pagination"></div>
+       <!-- <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
+      </div>
 
         <div class="cards__footer">
           <div>
@@ -616,7 +623,7 @@
             </div>
           </div>
         </div>
-        <div class="modal">
+        <div  id="myModal" class="modal">
           <div class="modal__content">
             <button class="modal__close">
               <img src="/public/images/close.svg" alt="Закрытие окна" />
@@ -646,7 +653,6 @@
     </section>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js.js"></script>
     <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>

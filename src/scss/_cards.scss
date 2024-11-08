@@ -1,14 +1,16 @@
 .cards {
   display: flex;
-  flex-wrap: wrap;
-  padding-left: 16px;
+  // flex-wrap: wrap;
+  // padding-left: 16px;
+  flex-direction: row;
+  gap: 16px;
+  // min-width: 0;
 
   &__item {
     width: 260px;
     height: 220px;
     border-radius: 6px;
     background-color: $white;
-    margin-right: 16px;
     line-height: 18px;
     letter-spacing: 0.2px;
     font-size: 14px;
