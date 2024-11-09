@@ -1,16 +1,8 @@
 .modal {
   // padding-left: 16px;
-  // width: 320px;
-  // height: 676px;
   background-color: $white;
-  // visibility: hidden;
-  display: none; /* Скрыто по умолчанию */
-  position: fixed; /* Остается на месте */
-  // z-index: 1; /* Сидит на вершине */
-  // left: 0;
-  // top: 0;
-  // width: 100%; /* Полная ширина */
-  // height: 100%; /* Полная высота */
+  display: none;
+  position: fixed;
   height: 100%;
   width: 100%;
   background: $white;
@@ -20,19 +12,15 @@
   left: 80vw;
   transition: 0.5s ease;
 
-  @media (min-width: 1440px) {
-    width: 440px;
-    height: 940px;
-    padding-left: 32px;
-  }
   &__input {
     height: 48px;
     border-radius: 8px;
     border: 1px solid $border-table;
     padding-left: 16px;
   }
+
   &__title {
-    padding-top: 40px;
+    margin-top: 40px;
 
     &::before {
       content: url(/images/highlight.svg);
@@ -45,11 +33,15 @@
       }
     }
   }
-
   &__close {
     border: none;
-    background-color: $white;
+    background-color: transparent;
     cursor: pointer;
+    @media (min-width: 1440px) {
+      position: absolute;
+      left: -70px;
+      margin-top: 0px;
+    }
   }
 
   &__form {
@@ -111,5 +103,13 @@
     width: 320px;
     height: 100vh;
     background-color: $white;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    @media (min-width: 1440px) {
+      width: 440px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
   }
 }
