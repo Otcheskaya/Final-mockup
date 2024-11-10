@@ -1,5 +1,4 @@
 .modal {
-  // padding-left: 16px;
   background-color: $white;
   display: none;
   position: fixed;
@@ -31,16 +30,6 @@
         position: relative;
         right: 30px;
       }
-    }
-  }
-  &__close {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    @media (min-width: 1440px) {
-      position: absolute;
-      left: -70px;
-      margin-top: 0px;
     }
   }
 
@@ -110,6 +99,17 @@
       width: 440px;
       padding-left: 32px;
       padding-right: 32px;
+    }
+  }
+
+  &__close {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    @media (min-width: 1440px) {
+      position: absolute;
+      left: -70px;
+      margin-top: 0px;
     }
   }
 }

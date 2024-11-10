@@ -124,7 +124,7 @@ function toogleMenu() {
 // Modal windows
 const modal = document.getElementById("myModal");
 const btn = document.getElementById("openModal");
-const span = document.getElementsByClassName(".modal__close")[0];
+const span = document.getElementsByClassName("modal__close");
 
 // Когда пользователь нажимает на кнопку, открываем модальное окно
 btn.onclick = function () {
@@ -140,5 +140,27 @@ span.onclick = function () {
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
+  }
+};
+
+// Modal windows
+const chatModal = document.getElementById("chatModal");
+const btnChat = document.getElementById("openChat");
+const btnClose = document.getElementsByClassName("modal__close");
+
+// Когда пользователь нажимает на кнопку, открываем модальное окно
+btnChat.onclick = function () {
+  modal.style.display = "block";
+};
+
+// Когда пользователь нажимает на <span> (x), закрываем модальное окно
+btnClose.onclick = function () {
+  chatModal.style.display = "none";
+};
+
+// Когда пользователь кликает в любом месте за пределами модального окна, закрываем его
+window.onclick = function (event) {
+  if (event.target == modal) {
+    chatModal.style.display = "none";
   }
 };
