@@ -136,3 +136,12 @@ window.onclick = function (event) {
     blurModal.style.display = "none";
   }
 };
+
+document.getElementById("burger").addEventListener("click", function () {
+  const navbar = document.getElementById("navbar");
+  if (navbar.style.display === "block") {
+    navbar.style.display = "none"; // Скрываем навигацию
+  } else {
+    navbar.style.display = "block"; // Показываем навигацию
+  }
+});
