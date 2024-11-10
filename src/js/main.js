@@ -90,13 +90,13 @@ document.getElementById("toggleButton").addEventListener("click", function () {
 const chatModal = document.getElementById("chatModal");
 const btnChat = document.getElementById("openChat");
 const btnCloseChat = document.getElementsByClassName("modal__close")[0];
-const overlayChat = document.querySelector(".blur");
+const overlayChat = document.querySelector(".blur_modal");
 
 // Получаем элементы для второго модального окна
 const modal = document.getElementById("myModal");
 const btnOpenModal = document.getElementById("openModal");
 const btnCloseModal = document.getElementsByClassName("modal__closed")[0];
-const blurModal = document.querySelector(".blur");
+const blurModal = document.querySelector(".blur_modal");
 
 // Функция для открытия первого модального окна
 btnChat.onclick = function () {
@@ -139,9 +139,22 @@ window.onclick = function (event) {
 
 document.getElementById("burger").addEventListener("click", function () {
   const navbar = document.getElementById("navbar");
+  const blurNavbar = document.querySelector(".blur");
+
   if (navbar.style.display === "block") {
     navbar.style.display = "none"; // Скрываем навигацию
+    blurNavbar.style.display = "none"; // Скрываем эффект размытия
   } else {
     navbar.style.display = "block"; // Показываем навигацию
+    blurNavbar.style.display = "block"; // Показываем эффект размытия
   }
+});
+
+// Добавляем обработчик события для закрытия при нажатии на заблюренную область
+document.querySelector(".blur").addEventListener("click", function () {
+  const navbar = document.getElementById("navbar");
+  const blurNavbar = document.querySelector(".blur");
+
+  navbar.style.display = "none"; // Скрываем навигацию
+  blurNavbar.style.display = "none"; // Скрываем эффект размытия
 });

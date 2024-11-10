@@ -11,13 +11,3 @@
     transform: scale(1.2);
   }
 }
-
-.btn_theme_navbar {
-  background-color: $background;
-}
-
-@media (min-width: 1440px) {
-  .btn {
-    background-color: $background;
-  }
-}

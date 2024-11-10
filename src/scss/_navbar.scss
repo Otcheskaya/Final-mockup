@@ -12,6 +12,7 @@
   color: $main-text-color;
   padding-left: 16px;
   display: none;
+  z-index: 10;
 
   @media (min-width: 1440px) {
     display: block;
