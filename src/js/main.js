@@ -104,8 +104,9 @@ span.onclick = function () {
 
 // Когда пользователь кликает в любом месте за пределами модального окна, закрываем его
 window.onclick = function (event) {
-  if (event.target == modal) {
+  if (event.target == blur) {
     modal.style.display = "none";
+    blur.style.display = "none";
   }
 };
 
@@ -129,26 +130,11 @@ btnClose.onclick = function () {
 
 // Когда пользователь кликает в любом месте за пределами модального окна, закрываем его
 window.onclick = function (event) {
-  if (event.target == modal) {
+  if (event.target == overlay) {
     chatModal.style.display = "none";
+    overlay.style.display = "none";
   }
 };
-
-// function closeModal() {
-//   modal.style.display = "none";
-//   overlay.style.display = "none";
-// }
-
-// function openModal() {
-//   modal.style.display = "block";
-//   overlay.style.display = "block";
-// }
-
-// Закрытие модального окна при нажатии на кнопку закрытия
-btnClose.addEventListener("click", closeModal);
-
-// Закрытие модального окна при клике на наложение
-overlay.addEventListener("click", closeModal);
 
 // const menuOpenBtn = document.querySelector(".navbar");
 // const menuCloseBtn = document.querySelector(".menu__burger");
