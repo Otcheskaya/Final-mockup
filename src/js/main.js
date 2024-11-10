@@ -73,15 +73,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const menuOpenBtn = document.querySelector(".navbar");
-const menuCloseBtn = document.querySelector(".menu__burger");
-const menuCloseBlur = document.querySelector(".blur");
-
-menuOpenBtn.addEventListener("click", openMenu);
-menuCloseBtn.addEventListener("click", toogleMenu);
-menuCloseBlur?.addEventListener("click", closeMenu);
-const navBody = document.querySelector(".navbar");
-
 // Read more
 
 document.getElementById("toggleButton").addEventListener("click", function () {
@@ -93,47 +84,22 @@ document.getElementById("toggleButton").addEventListener("click", function () {
   }
 });
 
-export function openMenu() {
-  if (navBody)
-    navBody.style.boxShadow =
-      "16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02)";
-  document.querySelector(".navbar").style.left = "0";
-  setTimeout(() => {
-    if (menuCloseBlur) menuCloseBlur.style.display = "block";
-  }, 500);
-}
-
-function closeMenu() {
-  if (menuCloseBlur) menuCloseBlur.style.display = "none";
-  if (window.innerWidth > 1440) {
-    document.querySelector(".navbar").style.left = "-320px";
-  } else document.querySelector(".navbar").style.left = "-360px";
-  if (navBody) navBody.style.boxShadow = "none";
-}
-
-function toogleMenu() {
-  console.log(navBody?.style.left);
-  if (navBody.style.left == "-320px") {
-    openMenu();
-    console.log(5555);
-  } else {
-    closeMenu();
-  }
-}
-
 // Modal windows
 const modal = document.getElementById("myModal");
 const btn = document.getElementById("openModal");
 const span = document.getElementsByClassName("modal__close");
+const blur = document.querySelector(".blur");
 
 // Когда пользователь нажимает на кнопку, открываем модальное окно
 btn.onclick = function () {
   modal.style.display = "block";
+  blur.style.display = "block";
 };
 
 // Когда пользователь нажимает на <span> (x), закрываем модальное окно
 span.onclick = function () {
   modal.style.display = "none";
+  blur.style.display = "none";
 };
 
 // Когда пользователь кликает в любом месте за пределами модального окна, закрываем его
@@ -147,15 +113,18 @@ window.onclick = function (event) {
 const chatModal = document.getElementById("chatModal");
 const btnChat = document.getElementById("openChat");
 const btnClose = document.getElementsByClassName("modal__close");
+const overlay = document.querySelector(".blur");
 
 // Когда пользователь нажимает на кнопку, открываем модальное окно
 btnChat.onclick = function () {
   chatModal.style.display = "block";
+  overlay.style.display = "block";
 };
 
 // Когда пользователь нажимает на <span> (x), закрываем модальное окно
 btnClose.onclick = function () {
   chatModal.style.display = "none";
+  overlay.style.display = "none";
 };
 
 // Когда пользователь кликает в любом месте за пределами модального окна, закрываем его
@@ -164,3 +133,56 @@ window.onclick = function (event) {
     chatModal.style.display = "none";
   }
 };
+
+// function closeModal() {
+//   modal.style.display = "none";
+//   overlay.style.display = "none";
+// }
+
+// function openModal() {
+//   modal.style.display = "block";
+//   overlay.style.display = "block";
+// }
+
+// Закрытие модального окна при нажатии на кнопку закрытия
+btnClose.addEventListener("click", closeModal);
+
+// Закрытие модального окна при клике на наложение
+overlay.addEventListener("click", closeModal);
+
+// const menuOpenBtn = document.querySelector(".navbar");
+// const menuCloseBtn = document.querySelector(".menu__burger");
+// const menuCloseBlur = document.querySelector(".blur");
+
+// menuOpenBtn.addEventListener("click", openMenu);
+// menuCloseBtn.addEventListener("click", toogleMenu);
+// menuCloseBlur?.addEventListener("click", closeMenu);
+// const navBody = document.querySelector(".navbar");
+
+// export function openMenu() {
+//   if (navBody)
+//     navBody.style.boxShadow =
+//       "16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02)";
+//   document.querySelector(".navbar").style.left = "0";
+//   setTimeout(() => {
+//     if (menuCloseBlur) menuCloseBlur.style.display = "block";
+//   }, 500);
+// }
+
+// function closeMenu() {
+//   if (menuCloseBlur) menuCloseBlur.style.display = "none";
+//   if (window.innerWidth > 1440) {
+//     document.querySelector(".navbar").style.left = "-320px";
+//   } else document.querySelector(".navbar").style.left = "-360px";
+//   if (navBody) navBody.style.boxShadow = "none";
+// }
+
+// function toogleMenu() {
+//   console.log(navBody?.style.left);
+//   if (navBody.style.left == "-320px") {
+//     openMenu();
+//     console.log(5555);
+//   } else {
+//     closeMenu();
+//   }
+// }
