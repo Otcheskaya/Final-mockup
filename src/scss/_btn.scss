@@ -1,6 +1,6 @@
 .btn {
   border: none;
-  background-color: $white;
+  background-color: transparent;
   cursor: pointer;
 
   &:hover {
@@ -9,10 +9,6 @@
 
   &:active {
     transform: scale(1.2);
-  }
-
-  &:focus {
-    transform: scale(0.9);
   }
 }
 
