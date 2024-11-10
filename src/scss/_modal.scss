@@ -112,4 +112,15 @@
       margin-top: 0px;
     }
   }
+
+  &__closed {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    @media (min-width: 1440px) {
+      position: absolute;
+      left: -70px;
+      margin-top: 0px;
+    }
+  }
 }

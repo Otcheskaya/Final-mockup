@@ -6,9 +6,9 @@
   background: $white;
   opacity: 0.9;
   display: none;
-  @media (min-width: 1120px) {
-    left: 0;
-  }
+  // @media (min-width: 1440px) {
+  //   left: 0;
+  // }
   &_modal {
     z-index: 11;
   }

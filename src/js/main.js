@@ -84,91 +84,55 @@ document.getElementById("toggleButton").addEventListener("click", function () {
   }
 });
 
-// Modal windows
-const modal = document.getElementById("myModal");
-const btn = document.getElementById("openModal");
-const span = document.getElementsByClassName("modal__close");
-const blur = document.querySelector(".blur");
+//Modal windows
 
-// Когда пользователь нажимает на кнопку, открываем модальное окно
-btn.onclick = function () {
-  modal.style.display = "block";
-  blur.style.display = "block";
-};
-
-// Когда пользователь нажимает на <span> (x), закрываем модальное окно
-span.onclick = function () {
-  modal.style.display = "none";
-  blur.style.display = "none";
-};
-
-// Когда пользователь кликает в любом месте за пределами модального окна, закрываем его
-window.onclick = function (event) {
-  if (event.target == blur) {
-    modal.style.display = "none";
-    blur.style.display = "none";
-  }
-};
-
-// Modal windows
+// Получаем элементы для первого модального окна
 const chatModal = document.getElementById("chatModal");
 const btnChat = document.getElementById("openChat");
-const btnClose = document.getElementsByClassName("modal__close");
-const overlay = document.querySelector(".blur");
+const btnCloseChat = document.getElementsByClassName("modal__close")[0];
+const overlayChat = document.querySelector(".blur");
 
-// Когда пользователь нажимает на кнопку, открываем модальное окно
+// Получаем элементы для второго модального окна
+const modal = document.getElementById("myModal");
+const btnOpenModal = document.getElementById("openModal");
+const btnCloseModal = document.getElementsByClassName("modal__closed")[0];
+const blurModal = document.querySelector(".blur");
+
+// Функция для открытия первого модального окна
 btnChat.onclick = function () {
   chatModal.style.display = "block";
-  overlay.style.display = "block";
+  overlayChat.style.display = "block";
 };
 
-// Когда пользователь нажимает на <span> (x), закрываем модальное окно
-btnClose.onclick = function () {
+// Функция для закрытия первого модального окна
+btnCloseChat.onclick = function () {
   chatModal.style.display = "none";
-  overlay.style.display = "none";
+  overlayChat.style.display = "none";
 };
 
-// Когда пользователь кликает в любом месте за пределами модального окна, закрываем его
+// Функция для открытия второго модального окна
+btnOpenModal.onclick = function () {
+  modal.style.display = "block";
+  blurModal.style.display = "block";
+};
+
+// Функция для закрытия второго модального окна
+btnCloseModal.onclick = function () {
+  modal.style.display = "none";
+  blurModal.style.display = "none";
+};
+
+// Обработчик кликов по окну
 window.onclick = function (event) {
-  if (event.target == overlay) {
+  // Проверяем клик по области наложения первого модального окна
+  if (event.target == overlayChat) {
     chatModal.style.display = "none";
-    overlay.style.display = "none";
+    overlayChat.style.display = "none";
+  }
+
+  // Проверяем клик по области наложения второго модального окна
+  if (event.target == blurModal) {
+    modal.style.display = "none";
+    blurModal.style.display = "none";
   }
 };
-
-// const menuOpenBtn = document.querySelector(".navbar");
-// const menuCloseBtn = document.querySelector(".menu__burger");
-// const menuCloseBlur = document.querySelector(".blur");
-
-// menuOpenBtn.addEventListener("click", openMenu);
-// menuCloseBtn.addEventListener("click", toogleMenu);
-// menuCloseBlur?.addEventListener("click", closeMenu);
-// const navBody = document.querySelector(".navbar");
-
-// export function openMenu() {
-//   if (navBody)
-//     navBody.style.boxShadow =
-//       "16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02)";
-//   document.querySelector(".navbar").style.left = "0";
-//   setTimeout(() => {
-//     if (menuCloseBlur) menuCloseBlur.style.display = "block";
-//   }, 500);
-// }
-
-// function closeMenu() {
-//   if (menuCloseBlur) menuCloseBlur.style.display = "none";
-//   if (window.innerWidth > 1440) {
-//     document.querySelector(".navbar").style.left = "-320px";
-//   } else document.querySelector(".navbar").style.left = "-360px";
-//   if (navBody) navBody.style.boxShadow = "none";
-// }
-
-// function toogleMenu() {
-//   console.log(navBody?.style.left);
-//   if (navBody.style.left == "-320px") {
-//     openMenu();
-//     console.log(5555);
-//   } else {
-//     closeMenu();
-//   }
-// }
