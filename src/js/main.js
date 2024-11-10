@@ -150,7 +150,7 @@ const btnClose = document.getElementsByClassName("modal__close");
 
 // Когда пользователь нажимает на кнопку, открываем модальное окно
 btnChat.onclick = function () {
-  modal.style.display = "block";
+  chatModal.style.display = "block";
 };
 
 // Когда пользователь нажимает на <span> (x), закрываем модальное окно
