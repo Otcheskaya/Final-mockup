@@ -12,12 +12,6 @@
     flex-direction: column;
     row-gap: 10px;
     padding-left: 16px;
-    @media (max-width: 320px) {
-      width: 288px;
-    }
-    @media (max-width: 768px) {
-      width: 312px;
-    }
 
     @media (min-width: 768px) {
       padding-left: 24px;
