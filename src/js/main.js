@@ -141,6 +141,7 @@ document.getElementById("burger").addEventListener("click", function () {
   const navbar = document.getElementById("navbar");
   const blurNavbar = document.querySelector(".blur");
 
+  // Переключаем состояние навигации
   if (navbar.style.display === "block") {
     navbar.style.display = "none"; // Скрываем навигацию
     blurNavbar.style.display = "none"; // Скрываем эффект размытия
@@ -155,6 +156,21 @@ document.querySelector(".blur").addEventListener("click", function () {
   const navbar = document.getElementById("navbar");
   const blurNavbar = document.querySelector(".blur");
 
-  navbar.style.display = "none"; // Скрываем навигацию
-  blurNavbar.style.display = "none"; // Скрываем эффект размытия
+  // Переключение состояния вне зависимости от разрешения
+  navbar.style.display = "none";
+  blurNavbar.style.display = "none";
+});
+
+// Добавляем обработчик события для изменения размера окна
+window.addEventListener("resize", function () {
+  const navbar = document.getElementById("navbar");
+  const blurNavbar = document.querySelector(".blur");
+
+  if (window.innerWidth === 1440) {
+    navbar.style.display = "block"; // Показываем навигацию
+    blurNavbar.style.display = "block"; // Показываем эффект размытия
+  } else {
+    navbar.style.display = "none"; // Скрываем навигацию
+    blurNavbar.style.display = "none"; // Скрываем эффект размытия
+  }
 });
